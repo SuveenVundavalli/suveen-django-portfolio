@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+from . import settings_secret
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,12 +21,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'a%*7(oj@=l24t#j$n8zs&+px#v4w2c*#-r6g&t@@q%qij(sv-k'
+SECRET_KEY = settings_secret.SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['35.165.55.226']
+ALLOWED_HOSTS = ['35.165.55.226', 'localhost']
 
 
 # Application definition
@@ -75,12 +76,12 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'portfolio',
-        'USER': 'db_user',
-        'PASSWORD': 'db_password',
-        'HOST': 'localhost',
-        'PORT': '',              # Set to empty string for default.
+        'ENGINE': settings_secret.ENGINE,
+        'NAME': settings_secret.NAME,
+        'USER': settings_secret.USER,
+        'PASSWORD': settings_secret.PASSWORD,
+        'HOST': settings_secret.HOST,
+        'PORT': settings_secret.PORT,              # Set to empty string for default.
     }
 }
 
