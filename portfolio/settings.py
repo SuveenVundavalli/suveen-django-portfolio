@@ -26,7 +26,12 @@ SECRET_KEY = settings_secret.SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['35.165.55.226', 'localhost']
+PRODUCTION = settings_secret.PRODUCTION
+
+if PRODUCTION:
+    ALLOWED_HOSTS = ['35.165.55.226', 'suveen.me', 'www.suveen.me']
+else:
+    ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
