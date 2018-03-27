@@ -2,7 +2,9 @@ body {
     padding-top: 60px;
 }
 
-/*Vertical center*/
+/**
+* Vertical center
+**/
 .vertical-center {
     min-height: 100%; /* Fallback for browsers do NOT support vh unit */
     min-height: 90vh; /* These two lines are counted as one :-)       */
@@ -12,7 +14,9 @@ body {
 }
 
 
-/*Navbar toggle based on screen size*/
+/**
+* Navbar toggle based on screen size
+**/
 @media (max-width: 991px) {
   .navbar-header {
       float: none;
