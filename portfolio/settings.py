@@ -31,7 +31,7 @@ if PRODUCTION:
     SITE_URL = 'www.suveen.me'
     DEBUG = False
 else:
-    ALLOWED_HOSTS = ['localhost']
+    ALLOWED_HOSTS = ['*']
     SITE_URL = 'localhost:8000'
     DEBUG = True
 

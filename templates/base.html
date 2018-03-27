@@ -18,5 +18,15 @@
 </div>
 {% include "snippets/footer.html" %}
 {% include "snippets/js.html" %}
+
+{# if message on context display modal #}
+{% if  message %}
+    {% include "snippets/modal.html" %}
+    <script>
+        $(document).ready(function() {
+            $("#myModal").modal("show");
+        });
+    </script>
+{% endif %}
 </body>
 </html>
