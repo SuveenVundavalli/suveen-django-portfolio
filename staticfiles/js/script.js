@@ -1,5 +1,6 @@
 $(document).ready(main);
 
 function main() {
-    alert("Hello, world!");
+    // All the script goes here
+
 }
