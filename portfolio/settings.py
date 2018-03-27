@@ -31,13 +31,13 @@ if PRODUCTION:
     SITE_URL = 'www.suveen.me'
     DEBUG = False
     STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-    STATIC_URL = '/static/'
 else:
     ALLOWED_HOSTS = ['localhost']
     SITE_URL = 'localhost:8000'
     DEBUG = True
     STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles/'), ]
-    STATIC_URL = '/staticfiles/'
+
+STATIC_URL = '/static/'
 
 # Application definition
 
