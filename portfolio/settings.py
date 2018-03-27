@@ -28,16 +28,13 @@ DEBUG = False
 PRODUCTION = settings_secret.PRODUCTION
 if PRODUCTION:
     ALLOWED_HOSTS = ['35.165.55.226', 'suveen.me', 'www.suveen.me']
-    SITE_URL = 'www.suveen.me'
+    SITE_URL = 'http://www.suveen.me'
     DEBUG = False
 else:
     ALLOWED_HOSTS = ['*']
-    SITE_URL = 'localhost:8000'
+    SITE_URL = 'http://localhost:8000'
     DEBUG = True
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles/'), ]
 
 # Application definition
 
@@ -128,3 +125,13 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles/'), ]
+
+# Email configuration
+EMAIL_HOST = settings_secret.EMAIL_HOST
+EMAIL_HOST_USER = settings_secret.EMAIL_HOST_USER
+EMAIL_HOST_PASSWORD = settings_secret.EMAIL_HOST_PASSWORD
+EMAIL_PORT = settings_secret.EMAIL_PORT
+EMAIL_USE_TLS = settings_secret.EMAIL_USE_TLS
