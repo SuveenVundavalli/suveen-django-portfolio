@@ -28,10 +28,14 @@ DEBUG = False
 PRODUCTION = settings_secret.PRODUCTION
 if PRODUCTION:
     ALLOWED_HOSTS = ['35.165.55.226', 'suveen.me', 'www.suveen.me']
-    SITE_URL = 'www.suveen.ga'
+    SITE_URL = 'www.suveen.me'
+    DEBUG = False
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 else:
     ALLOWED_HOSTS = ['localhost']
     SITE_URL = 'localhost:8000'
+    DEBUG = True
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles/'), ]
 
 # Application definition
 
@@ -124,6 +128,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles/'), ]
 

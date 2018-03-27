@@ -26,3 +26,6 @@ tests/report/
 
 # Hide Sensitive info
 portfolio/settings_secret.py
+
+# Production Static Files
+static/*
