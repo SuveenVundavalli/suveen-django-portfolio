@@ -27,12 +27,12 @@ SECRET_KEY = settings_secret.SECRET_KEY
 DEBUG = True
 
 PRODUCTION = settings_secret.PRODUCTION
-
 if PRODUCTION:
     ALLOWED_HOSTS = ['35.165.55.226', 'suveen.me', 'www.suveen.me']
+    SITE_URL = 'www.suveen.ga'
 else:
     ALLOWED_HOSTS = ['localhost']
-
+    SITE_URL = 'localhost:8000'
 
 # Application definition
 
