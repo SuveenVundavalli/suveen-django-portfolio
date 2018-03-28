@@ -12,10 +12,10 @@
 </head>
 <body>
 {% include "snippets/nav.html" %}
-<div class="container">
-    {% block content %}
-    {% endblock content %}
-</div>
+
+{% block content %}
+{% endblock content %}
+
 {% include "snippets/footer.html" %}
 {% include "snippets/js.html" %}
 
@@ -23,7 +23,7 @@
 {% if  message %}
     {% include "snippets/modal.html" %}
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $("#myModal").modal("show");
         });
     </script>

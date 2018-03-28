@@ -2,5 +2,14 @@
 {% block title %} Home | {{ block.super }} {% endblock title %}
 
 {% block content %}
-    <div class="h1">Welcome</div>
+    <div class="text-white index-block">
+        <div class="container">
+            <div class="row">
+                <div class="h1 cg-font">{{ index_title }}</div>
+                <div class="h2 cg-font">{{ index_caption }}</div>
+            </div>
+        </div>
+    </div>
+
+
 {% endblock content %}
