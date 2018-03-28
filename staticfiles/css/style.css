@@ -5,27 +5,39 @@
 * third     : 00ced1
 **/
 
-
 body {
     margin-top: 50px;
     padding: 0;
+    padding-bottom: 8vh;
     height: 100%;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     background-color: #edf3f8;
+    line-height: 30px;
+    font-size: 150%;
     /*padding-top: 50px;*/
 }
 
 /**
 * Font
 **/
+/* text color matching navbar */
+.text-nav {
+    color: #4682B4;
+}
+
 /*Basic Fonts*/
 .details-body p {
     line-height: 30px;
     font-size: 150%;
 }
 
+.white-bg {
+    background-color: white;
+}
+
+
 .jumbotron {
-    background: linear-gradient(to bottom right, #5f9ea0, #4682b4);
+    background: linear-gradient(#5f9ea0, #4682b4);
 }
 
 p {
@@ -35,10 +47,13 @@ p {
 
 .details-body {
     margin-top: 8vh;
+    padding: 50px;
 }
 
+/* Experience */
+
 .template-color {
-    background:  linear-gradient(to bottom right, #5f9ea0, #4682b4);
+    background: linear-gradient(to bottom right, #5f9ea0, #4682b4);
     color: white;
     padding: 10px;
 }
@@ -48,9 +63,15 @@ p {
 **/
 .vertical-center {
     min-height: 100%; /* Fallback for browsers do NOT support vh unit */
-    min-height: 90vh; /* These two lines are counted as one :-)       */
+    min-height: 85vh; /* These two lines are counted as one :-)       */
     display: flex;
     align-items: center;
+}
+
+.col-center {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
 
 /**
@@ -137,103 +158,122 @@ and (max-device-width: 480px) {
 
 /* Navbar Color */
 .navbar-default {
-  background-color: #4682b4;
-  border-color: #5f9ea0;
+    background-color: #4682b4;
+    border-color: #5f9ea0;
 }
+
 .navbar-default .navbar-brand {
-  color: #ffffff;
+    color: #ffffff;
 }
+
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #ffffff;
+    color: #ffffff;
 }
+
 .navbar-default .navbar-text {
-  color: #ffffff;
+    color: #ffffff;
 }
+
 .navbar-default .navbar-nav > li > a {
-  color: #ffffff;
+    color: #ffffff;
 }
+
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #ffffff;
+    color: #ffffff;
 }
+
 .navbar-default .navbar-nav > li > .dropdown-menu {
-  background-color: #4682b4;
+    background-color: #4682b4;
 }
+
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
-  color: #ffffff;
+    color: #ffffff;
 }
+
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
-  color: #ffffff;
-  background-color: #5f9ea0;
+    color: #ffffff;
+    background-color: #5f9ea0;
 }
+
 .navbar-default .navbar-nav > li > .dropdown-menu > li.divider {
-  background-color: #5f9ea0;
+    background-color: #5f9ea0;
 }
+
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-  color: #ffffff;
-  background-color: #5f9ea0;
+    color: #ffffff;
+    background-color: #5f9ea0;
 }
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #ffffff;
-  background-color: #5f9ea0;
+    color: #ffffff;
+    background-color: #5f9ea0;
 }
+
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #ffffff;
-  background-color: #5f9ea0;
+    color: #ffffff;
+    background-color: #5f9ea0;
 }
+
 .navbar-default .navbar-toggle {
-  border-color: #5f9ea0;
+    border-color: #5f9ea0;
 }
+
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #5f9ea0;
+    background-color: #5f9ea0;
 }
+
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
+
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #ffffff;
+    border-color: #ffffff;
 }
+
 .navbar-default .navbar-link {
-  color: #ffffff;
+    color: #ffffff;
 }
+
 .navbar-default .navbar-link:hover {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 @media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #ffffff;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #ffffff;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #ffffff;
-    background-color: #5f9ea0;
-  }
-}
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #ffffff;
+    }
 
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #ffffff;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #ffffff;
+        background-color: #5f9ea0;
+    }
+}
 
 /**
 * Buttons
 **/
 .btn-theme {
-  color: #ffffff;
-  background-color: #4682B4;
-  border-color: #00ced1;
+    color: #ffffff;
+    background-color: #4682B4;
+    border-color: #00ced1;
 }
 
 .btn-theme:hover,
@@ -241,15 +281,15 @@ and (max-device-width: 480px) {
 .btn-theme:active,
 .btn-theme.active,
 .open .dropdown-toggle.btn-theme {
-  color: #ffffff;
-  background-color: #5F9EA0;
-  border-color: #00ced1;
+    color: #ffffff;
+    background-color: #5F9EA0;
+    border-color: #00ced1;
 }
 
 .btn-theme:active,
 .btn-theme.active,
 .open .dropdown-toggle.btn-theme {
-  background-image: none;
+    background-image: none;
 }
 
 .btn-theme.disabled,
@@ -267,11 +307,11 @@ fieldset[disabled] .btn-theme:active,
 .btn-theme.disabled.active,
 .btn-theme[disabled].active,
 fieldset[disabled] .btn-theme.active {
-  background-color: #4682B4;
-  border-color: #00ced1;
+    background-color: #4682B4;
+    border-color: #00ced1;
 }
 
 .btn-theme .badge {
-  color: #4682B4;
-  background-color: #ffffff;
+    color: #4682B4;
+    background-color: #ffffff;
 }

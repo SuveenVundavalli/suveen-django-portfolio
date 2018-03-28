@@ -55,3 +55,8 @@ def mark_contact_read(request, pk):
     context['messageHeader'] = "Message marked read!"
     context['message'] = "You marked %s as read" % contact
     return render(request, "suveen/index.html", context)
+
+
+def experience(request):
+    context = {"navbar": "experience"}
+    return render(request, "suveen/experience.html", context)

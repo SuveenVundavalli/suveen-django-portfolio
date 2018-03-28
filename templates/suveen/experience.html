@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Home | {{ block.super }} {% endblock title %}
+
+{% block content %}
+    <div class="text-white jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                    <div class="h1 cg-font">Experience</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container details-body white-bg">
+        <div class="row">
+            {% comment %}
+            <div class="col-sm-4 col-sm-push-8" >A</div>
+            <div class="col-sm-8 col-sm-pull-4" >B</div>
+            <div class="col-sm-4" >C</div>
+            <div class="col-sm-8" >D</div>
+            {% endcomment %}
+            <div class="col-sm-4 col-sm-push-8"><img src="{% static "images/experience/OPR.png" %}" alt="OPR_logo"
+                                                     class="img-responsive"/></div>
+            <div class="col-sm-8 col-sm-pull-4">
+                <div class="h1 text-nav"><strong>Full Stack Developer</strong></div>
+                <div class="h3">One Planet Rating</div>
+                <div class="h4 text-nav"><strong>01/2017 - Present</strong></div>
+                <div class="h4 text-nav">Objective: Sustainable Tourism</div>
+                <ul>
+                    <li>My role involves working with front end technologies like <strong>HTML</strong>,
+                        <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>jQuery</strong>,
+                        <strong>Bootstrap</strong>.
+                    </li>
+                    <li>I was also involved in the development of backend in <strong>Python</strong> with
+                        <strong>Django</strong> framework. Tools such as Slack and Git are also used.
+                    </li>
+                    <li>I was involved in <strong>continuous deployment</strong> on <strong>AWS</strong>.</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-4"><img src="{% static "images/experience/NIIT.png" %}" alt="NIIT_logo"
+                                       class="img-responsive"/></div>
+            <div class="col-sm-8">
+                <div class="h1 text-nav"><strong>Full Stack Developer</strong></div>
+                <div class="h3">NIIT Technologies Pvt Ltd.,</div>
+                <div class="h4 text-nav"><strong>01/2016 – 01/2017</strong></div>
+                <div class="h4 text-nav">Objective: Talent Development Corporation</div>
+                <ul>
+                    <li>My role involves working with front end technologies like <strong>HTML</strong>,
+                        <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>jQuery</strong>,
+                        <strong>Bootstrap</strong>, <strong>AngularJS</strong>.
+                    </li>
+                    <li>I was also involved in the development of backend in <strong>Java</strong> with
+                        <strong>Spring</strong>framework. Git is used for continuous integration.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-4 col-sm-push-8"><img src="{% static "images/experience/softhouse.png" %}"
+                                                     alt="softhouse_logo" class="img-responsive"/></div>
+            <div class="col-sm-8 col-sm-pull-4">
+                <div class="h1 text-nav"><strong>Web Developer</strong></div>
+                <div class="h3">Softhouse AB</div>
+                <div class="h4 text-nav"><strong>07/2016 – 11/2016</strong></div>
+                <div class="h4 text-nav">Objective: Online Exams</div>
+                <ul>
+                    <li>The project to create and give web-based multiple-choice questions exams. Role based accesses.
+                    </li>
+                    <li>
+                        I was involved in development of frontend in <strong>HTML</strong>, <strong>CSS</strong>,
+                        <strong>JS</strong>, <strong>Jquery</strong>, <strong>Bootstrap</strong> and
+                        <strong>AngularJS</strong>.
+                    </li>
+                    <li>I was involved in <strong>continuous deployment</strong> on <strong>AWS</strong>.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

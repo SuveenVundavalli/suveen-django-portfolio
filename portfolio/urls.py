@@ -21,6 +21,7 @@ from suveen import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^contact/$', views.contact, name="contact"),
+    url(r'^experience/$', views.experience, name="experience"),
     url(r'^contact/(?P<pk>\d+)/read', views.mark_contact_read, name="mark_contact_read"),
     url(r'^$', views.index, name="index"),
 ]
