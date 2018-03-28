@@ -8,10 +8,7 @@ from django.template.loader import get_template
 
 # Return to index.html on loading home page
 def index(request):
-    context = {}
-    context["navbar"] = "profile"
-    context["index_title"] = "LOOKING FOR A WEB DEVELOPER?"
-    context["index_caption"] = "HEJ, I'M A WEB DEVELOPER & PROGRAMMER LIVING IN SWEDEN. I MAKE WEB APPLICATIONS USUALLY IN SPRING AND DJANGO"
+    context = {"navbar": "profile"}
     return render(request, "suveen/index.html", context)
 
 
