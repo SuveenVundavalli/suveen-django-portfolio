@@ -60,3 +60,36 @@ def mark_contact_read(request, pk):
 def experience(request):
     context = {"navbar": "experience"}
     return render(request, "suveen/experience.html", context)
+
+
+def education(request):
+    context = {"navbar": "education"}
+    return render(request, "suveen/education.html", context)
+
+
+def skills(request):
+    context = {"navbar": "skills"}
+    return render(request, "suveen/skills.html", context)
+
+
+def training(request):
+    context = {"navbar": "training"}
+    return render(request, "suveen/training.html", context)
+
+
+def internships(request):
+    context = {"navbar": "internships"}
+    return render(request, "suveen/internships.html", context)
+
+
+def voluntary(request):
+    context = {"navbar": "voluntary"}
+    return render(request, "suveen/voluntary.html", context)
+
+def academic(request):
+    context = {"navbar": "academic"}
+    return render(request, "suveen/academic.html", context)
+
+def publications(request):
+    context = {"navbar": "publications"}
+    return render(request, "suveen/publications.html", context)

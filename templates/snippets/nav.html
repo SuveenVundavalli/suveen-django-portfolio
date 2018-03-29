@@ -12,18 +12,18 @@
             <ul class="nav navbar-nav">
                 <li class="{% if navbar == 'profile' %}active{% endif %}"><a href="/">Profile</a></li>
                 <li class="{% if navbar == 'experience' %}active{% endif %}"><a href="/experience/">Experience</a></li>
-                <li class="{% if navbar == 'education' %}active{% endif %}"><a href="#">Education</a></li>
-                <li class="{% if navbar == 'skills' %}active{% endif %}"><a href="#">Skills</a></li>
-                <li class="{% if navbar == 'training' %}active{% endif %}"><a href="#">Training</a></li>
-                <li class="{% if navbar == 'internships' %}active{% endif %}"><a href="#">Internships</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle {% if navbar == 'voluntary' or navbar == 'academic' %}active{% endif %}" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
+                <li class="{% if navbar == 'education' %}active{% endif %}"><a href="/education/">Education</a></li>
+                <li class="{% if navbar == 'skills' %}active{% endif %}"><a href="/skills/">Skills</a></li>
+                <li class="{% if navbar == 'training' %}active{% endif %}"><a href="/training/">Training</a></li>
+                <li class="{% if navbar == 'internships' %}active{% endif %}"><a href="/internships/">Internships</a></li>
+                <li class="dropdown {% if navbar == 'voluntary' or navbar == 'academic' %}active{% endif %}">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li class="{% if navbar == 'voluntary' %}active{% endif %}"><a href="#">Voluntary</a></li>
-                        <li class="{% if navbar == 'academic' %}active{% endif %}"><a href="#">Academic</a></li>
+                        <li class="{% if navbar == 'voluntary' %}active{% endif %}"><a href="/voluntary/">Voluntary</a></li>
+                        <li class="{% if navbar == 'academic' %}active{% endif %}"><a href="/academic/">Academic</a></li>
                     </ul>
                 </li>
-                <li class="{% if navbar == 'publications' %}active{% endif %}"><a href="#">Publications</a></li>
+                <li class="{% if navbar == 'publications' %}active{% endif %}"><a href="/publications/">Publications</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="{% if navbar == 'contact' %}active{% endif %}"><a href="{% url 'contact' %}"><span class="glyphicon glyphicon-log-in"></span> Contact Me</a></li>

@@ -22,6 +22,13 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^contact/$', views.contact, name="contact"),
     url(r'^experience/$', views.experience, name="experience"),
+    url(r'^education/$', views.education, name="experience"),
+    url(r'^skills/$', views.skills, name="experience"),
+    url(r'^training/$', views.training, name="experience"),
+    url(r'^internships/$', views.internships, name="experience"),
+    url(r'^voluntary/$', views.voluntary, name="experience"),
+    url(r'^academic/$', views.academic, name="experience"),
+    url(r'^publications/$', views.publications, name="experience"),
     url(r'^contact/(?P<pk>\d+)/read', views.mark_contact_read, name="mark_contact_read"),
     url(r'^$', views.index, name="index"),
 ]
