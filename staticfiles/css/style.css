@@ -110,7 +110,7 @@ and (max-device-width: 480px) {
 ***/
 
 /* Navbar toggle based on screen size */
-@media (max-width: 950px) {
+@media (max-width: 991px) {
     .navbar-header {
         float: none;
     }
