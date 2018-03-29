@@ -31,10 +31,13 @@ body {
     font-size: 150%;
 }
 
+.details-body img {
+    width: 100%;
+}
+
 .white-bg {
     background-color: white;
 }
-
 
 .jumbotron {
     background: linear-gradient(#5f9ea0, #4682b4);
@@ -72,26 +75,6 @@ p {
     display: inline-block;
     vertical-align: middle;
     float: none;
-}
-
-/**
-* Index page design
-**/
-
-.index-block {
-    width: 100%;
-    min-height: 50vh;
-    background-color: #00CB84;
-    display: flex;
-    align-items: center;
-}
-
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px) {
-    .index-block {
-        min-height: 100vh;
-    }
 }
 
 .text-white {
