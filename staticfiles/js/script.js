@@ -3,14 +3,19 @@ $(document).ready(main);
 function main() {
     // All the script goes here
 
-
+    // Skills Progress Bar
+    $('.progress .progress-bar').css("width",
+        function () {
+            return $(this).attr("aria-valuenow") + "%";
+        }
+    )
 
     $('#contactForm').formValidation({
         framework: 'bootstrap',
-        icon : {
-            valid : 'glyphicon glyphicon-ok',
-            invalid : 'glyphicon glyphicon-remove',
-            validating : 'glyphicon glyphicon-refresh',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh',
         },
         fields: {
             name: {
