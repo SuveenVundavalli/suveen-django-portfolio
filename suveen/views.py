@@ -2,7 +2,7 @@ from .models import Contact
 
 from django.conf import settings
 from django.core.mail import EmailMultiAlternatives
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.template.loader import get_template
 
 
@@ -86,10 +86,20 @@ def voluntary(request):
     context = {"navbar": "voluntary"}
     return render(request, "suveen/voluntary.html", context)
 
+
 def academic(request):
     context = {"navbar": "academic"}
     return render(request, "suveen/academic.html", context)
 
+
 def publications(request):
     context = {"navbar": "publications"}
     return render(request, "suveen/publications.html", context)
+
+
+def github(request):
+    return redirect("https://github.com/suveenkumarchowdary")
+
+
+def linkedin(request):
+    return redirect("https://www.linkedin.com/in/svundavalli/")

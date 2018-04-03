@@ -30,5 +30,7 @@ urlpatterns = [
     url(r'^academic/$', views.academic, name="experience"),
     url(r'^publications/$', views.publications, name="experience"),
     url(r'^contact/(?P<pk>\d+)/read', views.mark_contact_read, name="mark_contact_read"),
+    url(r'^github/$', views.github, name="github"),
+    url(r'^linkedin/$', views.linkedin, name="linkedin"),
     url(r'^$', views.index, name="index"),
 ]
