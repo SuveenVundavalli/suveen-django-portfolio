@@ -8,8 +8,11 @@ from django.template.loader import get_template
 
 # Return to index.html on loading home page
 def index(request):
-    context = {"navbar": "profile"}
-    return render(request, "suveen/index.html", context)
+    return render(request, "newDesign.html", {})
+
+# def index(request):
+#     context = {"navbar": "profile"}
+#     return render(request, "suveen/index.html", context)
 
 
 def contact(request):

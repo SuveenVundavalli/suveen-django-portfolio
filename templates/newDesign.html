@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% include "snippets/meta.html" %}
+    <link rel="icon" sizes="16x16 32x32 64x64" href="{% static '/favicon.ico' %}">
+    <title>Suveen Kumar Vundavalli</title>
+    <script src="{% static "/js/pace.min.js" %}"></script>
+</head>
+<body>
+
+<header class="v-header container">
+    <div class="fullscreen-video-wrap">
+        <video poster="{% static "images/console.jpg" %}" autoplay loop muted>
+            <source src="{% static "videos/code.webm" %}" type="video/webm">
+            <source src="{% static "videos/code.mp4" %}" type="video/mp4">
+        </video>
+    </div>
+    <div class="header-overlay"></div>
+    <div class="header-content text-center">
+        <h1>LOOKING FOR A WEB DEVELOPER?</h1>
+        <p>I am an innovative and a committed graduate with passion to have a growth oriented and challenging career in the domain of Software/Web
+            Development to tone my experience and to utilize my programming skills through continuous learning and exploring new technologies.</p>
+        <a href="#" class="btn-home">
+            <img src="{% static "images/icon-scroll.gif" %}" alt="" width="70px">
+        </a>
+    </div>
+</header>
+
+
+{% include "snippets/footer.html" %}
+{% include "snippets/js.html" %}
+
+</body>
+</html>
