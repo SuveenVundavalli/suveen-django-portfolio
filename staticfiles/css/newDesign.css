@@ -89,11 +89,43 @@ body {
 ======================================================================================================================================================
  */
 
+/*Minumum height*/
 section {
-    min-height: calc(100vh - 65px);
-    height: -o-calc(100vh - 65px); /* opera */
-    height: -webkit-calc(100vh - 65px); /* google, safari */
-    height: -moz-calc(100vh - 65px); /* firefox */
+    min-height: calc(100vh - 52px);
+    height: -o-calc(100vh - 52px); /* opera */
+    height: -webkit-calc(100vh - 52px); /* google, safari */
+    height: -moz-calc(100vh - 52px); /* firefox */
+}
+
+@media (min-width: 1050px) {
+    section {
+        -webkit-flex-flow: column wrap;
+        -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+@media (min-height: 1024px) {
+    section {
+        -webkit-flex-flow: column wrap;
+        -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
 }
 
 /*
