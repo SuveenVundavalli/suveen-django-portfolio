@@ -54,7 +54,7 @@ body {
 }
 
 .header-content p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     display: block;
     padding-bottom: 2rem;
 }
@@ -92,40 +92,10 @@ body {
 /*Minumum height*/
 section {
     min-height: calc(100vh - 52px);
-    height: -o-calc(100vh - 52px); /* opera */
-    height: -webkit-calc(100vh - 52px); /* google, safari */
-    height: -moz-calc(100vh - 52px); /* firefox */
-}
-
-@media (min-width: 1050px) {
-    section {
-        -webkit-flex-flow: column wrap;
-        -ms-flex-flow: column wrap;
-        flex-flow: column wrap;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-}
-@media (min-height: 1024px) {
-    section {
-        -webkit-flex-flow: column wrap;
-        -ms-flex-flow: column wrap;
-        flex-flow: column wrap;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
+    min-height: -o-calc(100vh - 52px); /* opera */
+    min-height: -webkit-calc(100vh - 52px); /* google, safari */
+    min-height: -moz-calc(100vh - 52px); /* firefox */
+    padding-top: 5vh;
 }
 
 /*
@@ -152,4 +122,12 @@ section {
     font-style: normal;
     margin: 0 20px 0 0;
 }
+
+/*
+======================================================================================================================================================
+                                                                           Card
+======================================================================================================================================================
+ */
+
+
 

@@ -23,8 +23,8 @@ function main() {
     ==============================================================================
      */
     $(document).on('scroll', function () {
-        console.log($('html,body').scrollTop())
-        console.log(($('header').outerHeight() - 10))
+        // console.log($('html,body').scrollTop())
+        // console.log(($('header').outerHeight() - 10))
         if ($('html,body').scrollTop() > ($('header').outerHeight() - 10)) {
             $('.progress .progress-bar').css("width",
                 function () {
