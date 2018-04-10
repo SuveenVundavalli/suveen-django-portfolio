@@ -17,6 +17,12 @@ function main() {
     $("#nav").wrap("<div class='nav-placeholder'></div>");
     $(".nav-placeholder").height($("#nav").outerHeight());
 
+    var shiftWindow = function () {
+        scrollBy(0, -52)
+    };
+    if (location.hash) shiftWindow();
+    window.addEventListener("hashchange", shiftWindow);
+
     /*
     ==============================================================================
                                 Skills Progress Bar

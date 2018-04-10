@@ -7,7 +7,7 @@
     <title>Suveen Kumar Vundavalli</title>
     <script src="{% static "/js/pace.min.js" %}"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="55">
 
 <header class="v-header container">
     <div class="fullscreen-video-wrap">
@@ -43,17 +43,14 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Page 1-1</a></li>
-                            <li><a href="#">Page 1-2</a></li>
-                            <li><a href="#">Page 1-3</a></li>
+                            <li><a class="anchor" href="#">Page 1-1</a></li>
+                            <li><a class="anchor" href="#">Page 1-2</a></li>
+                            <li><a class="anchor" href="#">Page 1-3</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Page 2</a></li>
-                    <li><a href="#">Page 3</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a class="anchor" href="#skills">Skills</a></li>
+                    <li><a class="anchor" href="#experience">Experience</a></li>
+                    <li><a class="anchor" href="#education">Education</a></li>
                 </ul>
             </div>
         </div>
@@ -69,17 +66,19 @@
     <div class="container">
         <hr>
     </div>
-    <div class="container details-body white-bg">
-        <div class="h4 text-center">
+    <div class="container text-center">
+        <div class="h4">
             <div class="row">
-                <div class="col-lg-2">Scale:</div>
-                <div class="col-lg-2">2 - Limited,</div>
-                <div class="col-lg-2">4 - Borderline,</div>
-                <div class="col-lg-2">6 - Adequate,</div>
-                <div class="col-lg-2">8 - Strong,</div>
-                <div class="col-lg-2">10 - Exceptional</div>
+                <div class="col-md-2 col-sm-4 col-xs-6">Scale:</div>
+                <div class="col-md-2 col-sm-4 col-xs-6">2 - Limited,</div>
+                <div class="col-md-2 col-sm-4 col-xs-6">4 - Borderline,</div>
+                <div class="col-md-2 col-sm-4 col-xs-6">6 - Adequate,</div>
+                <div class="col-md-2 col-sm-4 col-xs-6">8 - Strong,</div>
+                <div class="col-md-2 col-sm-4 col-xs-6">10 - Exceptional</div>
             </div>
         </div>
+    </div>
+    <div class="container">
         <br>
         <div class="row">
             <div class="col-md-4 col-sm-6">
@@ -326,8 +325,10 @@
                             <div class="content">
                                 <div class="main">
                                     <h4 class="text-center">Job Description</h4>
-                                    <p class="text-center">My role involves working with front end technologies like <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>jQuery</strong>, <strong>Bootstrap</strong>.</p>
-                                    <p class="text-center">I was also involved in the <strong>development</strong> of <strong>backend</strong> in <strong>Python</strong> with <strong>Django</strong> framework. Tools such as Slack and Git are also used.</p>
+                                    <p class="text-center">My role involves working with front end technologies like <strong>HTML</strong>, <strong>CSS</strong>,
+                                        <strong>JavaScript</strong>, <strong>jQuery</strong>, <strong>Bootstrap</strong>.</p>
+                                    <p class="text-center">I was also involved in the <strong>development</strong> of <strong>backend</strong> in
+                                        <strong>Python</strong> with <strong>Django</strong> framework. Tools such as Slack and Git are also used.</p>
                                     <p class="text-center">I was involved in <strong>continuous deployment</strong> on <strong>AWS</strong>.</p>
                                 </div>
                             </div>
@@ -375,13 +376,17 @@
                             <div class="content">
                                 <div class="main">
                                     <h4 class="text-center">Job Description</h4>
-                                    <p class="text-center">My role involves working with front end technologies like <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>jQuery</strong>, <strong>Bootstrap</strong>, <strong>AngularJS</strong>.</p>
-                                    <p class="text-center">I was also involved in the <strong>development</strong> of <strong>backend</strong> in <strong>Java</strong> with <strong>Spring</strong> framework.Git is used for continuous integration.</p>
+                                    <p class="text-center">My role involves working with front end technologies like <strong>HTML</strong>, <strong>CSS</strong>,
+                                        <strong>JavaScript</strong>, <strong>jQuery</strong>, <strong>Bootstrap</strong>, <strong>AngularJS</strong>.
+                                    </p>
+                                    <p class="text-center">I was also involved in the <strong>development</strong> of <strong>backend</strong> in
+                                        <strong>Java</strong> with <strong>Spring</strong> framework.Git is used for continuous integration.</p>
                                 </div>
                             </div>
                             <div class="footer">
                                 <div class="social-links text-center">
-                                    <a href="https://www.facebook.com/NIIT4u/" class="facebook" target="_blank"><i class="fa fa-facebook fa-fw"></i></a>
+                                    <a href="https://www.facebook.com/NIIT4u/" class="facebook" target="_blank"><i
+                                            class="fa fa-facebook fa-fw"></i></a>
                                     <a href="http://www.niit.com/india/training/" class="website" target="_blank"><i class="fa fa-globe"></i></a>
                                     <a href="https://twitter.com/NIITLtd/" class="twitter" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
                                 </div>
@@ -423,13 +428,16 @@
                             <div class="content">
                                 <div class="main">
                                     <h4 class="text-center">Job Description</h4>
-                                    <p class="text-center">The project to create and give web-based multiple-choice questions exams with Role based accesses.</p>
-                                    <p class="text-center">I was involved in development of frontend in <strong>HTML</strong>, <strong>CSS</strong>, <strong>JS</strong>, <strong>jQuery</strong>, <strong>Bootstrap</strong>, <strong>AngularJS</strong>.</p>
+                                    <p class="text-center">The project to create and give web-based multiple-choice questions exams with Role based
+                                        accesses.</p>
+                                    <p class="text-center">I was involved in development of frontend in <strong>HTML</strong>, <strong>CSS</strong>,
+                                        <strong>JS</strong>, <strong>jQuery</strong>, <strong>Bootstrap</strong>, <strong>AngularJS</strong>.</p>
                                 </div>
                             </div>
                             <div class="footer">
                                 <div class="social-links text-center">
-                                    <a href="https://www.facebook.com/softhouseconsulting/" class="facebook" target="_blank"><i class="fa fa-facebook fa-fw"></i></a>
+                                    <a href="https://www.facebook.com/softhouseconsulting/" class="facebook" target="_blank"><i
+                                            class="fa fa-facebook fa-fw"></i></a>
                                     <a href="http://www.softhouse.se/" class="website" target="_blank"><i class="fa fa-globe"></i></a>
                                     <a href="https://twitter.com/softhousesh/" class="twitter" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
                                 </div>
@@ -449,6 +457,104 @@
 
 
 <!--------------------------Experiences section end -------------------------->
+<!--------------------------Education section start -------------------------->
+
+<section id="education">
+    <div class="text-center">
+        <h2>Education</h2>
+    </div>
+    <div class="container">
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="[ col-sm-6 col-md-offset-2 col-md-4 ]">
+                <div class="[ info-card ]">
+                    <img style="width: 100%" src="https://avatars.githubusercontent.com/u/564874?v=3"/>
+                    <div class="[ info-card-details ] animate">
+                        <div class="[ info-card-header ]">
+                            <h1> Robert McIntosh </h1>
+                            <h3> aka Mouse0270 </h3>
+                        </div>
+                        <div class="[ info-card-detail ]">
+                            <!-- Description -->
+                            <p>The idea of creating something out of nothing has always generated a passion in my heart. This is what lead me to
+                                website development. I can literally create little worlds that hopefully thousands of people can see and even
+                                experience.</p>
+                            <div class="social">
+                                <a href="https://www.facebook.com/rem.mcintosh"
+                                   class="[ social-icon facebook ] animate"><span class="fa fa-facebook"></span></a>
+
+                                <a href="https://twitter.com/Mouse0270"
+                                   class="[ social-icon twitter ] animate"><span class="fa fa-twitter"></span></a>
+
+                                <a href="https://github.com/mouse0270"
+                                   class="[ social-icon github ] animate"><span class="fa fa-github-alt"></span></a>
+
+                                <a href="https://plus.google.com/u/0/115077481218689845626/posts"
+                                   class="[ social-icon google-plus ] animate"><span class="fa fa-google-plus"></span></a>
+
+                                <a href="www.linkedin.com/in/remcintosh/"
+                                   class="[ social-icon linkedin ] animate"><span class="fa fa-linkedin"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="[ col-sm-6 col-md-4 ]">
+                <div class="[ info-card ]">
+                    <img style="width: 100%" src="http://api.randomuser.me/portraits/women/45.jpg"/>
+                    <div class="[ info-card-details ] animate">
+                        <div class="[ info-card-header ]">
+                            <h1> Caroline Samantha Henderson </h1>
+                            <h3> aka not a real person </h3>
+                        </div>
+                        <div class="[ info-card-detail ]">
+                            <!-- Description -->
+                            <p>People often say that beauty is in the eye of the beholder, and I say that the most liberating thing about beauty is
+                                realizing that you are the beholder. This empowers us to find beauty in places where others have not dared to look
+                                including inside ourselves.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--------------------------Education section end -------------------------->
+<!--------------------------Footer section end -------------------------->
+
+<footer class="footer">
+    <div class="container">
+        <div class="text-center">
+            <p class="text-muted">Place sticky footer content here.</p>
+            <hr>
+            <div class="social">
+                <a href="https://www.facebook.com/rem.mcintosh"
+                   class="[ social-icon facebook ] animate"><span class="fa fa-facebook"></span></a>
+
+                <a href="https://twitter.com/Mouse0270"
+                   class="[ social-icon twitter ] animate"><span class="fa fa-twitter"></span></a>
+
+                <a href="https://github.com/mouse0270"
+                   class="[ social-icon github ] animate"><span class="fa fa-github-alt"></span></a>
+
+                <a href="https://plus.google.com/u/0/115077481218689845626/posts"
+                   class="[ social-icon google-plus ] animate"><span class="fa fa-google-plus"></span></a>
+
+                <a href="www.linkedin.com/in/remcintosh/"
+                   class="[ social-icon linkedin ] animate"><span class="fa fa-linkedin"></span></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--------------------------Footer section end -------------------------->
+
+
+
+
 
 
 {% include "snippets/footer.html" %}
