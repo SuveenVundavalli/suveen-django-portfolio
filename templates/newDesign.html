@@ -9,7 +9,7 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="55">
 
-<header class="v-header container">
+<header class="v-header container" id="home">
     <div class="fullscreen-video-wrap">
         <video poster="{% static "images/console.jpg" %}" autoplay loop muted>
             <source src="{% static "videos/code.webm" %}" type="video/webm">
@@ -21,7 +21,7 @@
         <h1>LOOKING FOR A WEB DEVELOPER?</h1>
         <p>I am an innovative and a committed graduate with passion to have a growth oriented and challenging career in the domain of Software/Web
             Development to tone my experience and to utilize my programming skills through continuous learning and exploring new technologies.</p>
-        <a href="#" class="btn-home">
+        <a class="anchor" href="#skills">
             <img src="{% static "images/icon-scroll.gif" %}" alt="" width="70px">
         </a>
     </div>
@@ -39,7 +39,7 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li class="active"><a class="anchor" href="#home">Home</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -301,7 +301,7 @@
                     <div class="card">
                         <div class="front">
                             <div class="cover">
-                                <img src="{% static "images/experience/OPR.png" %}"/>
+                                <img src="{% static "images/experience/OPR_up.jpg" %}"/>
                             </div>
                             <div class="user">
                                 <img class="img-circle" src="{% static "images/experience/OPR.png" %}"/>
@@ -352,7 +352,7 @@
                     <div class="card">
                         <div class="front">
                             <div class="cover">
-                                <img src="{% static "images/experience/NIIT.png" %}"/>
+                                <img src="{% static "images/experience/NIIT_up.jpg" %}"/>
                             </div>
                             <div class="user">
                                 <img class="img-circle" src="{% static "images/experience/NIIT.png" %}"/>
@@ -404,7 +404,7 @@
                     <div class="card">
                         <div class="front">
                             <div class="cover">
-                                <img src="{% static "images/experience/softhouse.png" %}"/>
+                                <img src="{% static "images/experience/Softhouse_up.jpg" %}"/>
                             </div>
                             <div class="user">
                                 <img class="img-circle" src="{% static "images/experience/softhouse.png" %}"/>

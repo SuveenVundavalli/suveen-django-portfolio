@@ -20,8 +20,15 @@ function main() {
     var shiftWindow = function () {
         scrollBy(0, -52)
     };
+
     if (location.hash) shiftWindow();
+
     window.addEventListener("hashchange", shiftWindow);
+
+    $(".anchor").click(function (event) {
+        event.preventDefault();
+        $('html,body').animate({scrollTop: $(this.hash).offset().top-52}, 1200);
+    });
 
     /*
     ==============================================================================
