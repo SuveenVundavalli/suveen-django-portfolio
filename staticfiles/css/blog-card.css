@@ -78,18 +78,23 @@
 .info-card .info-card-details .info-card-header h1,
 .info-card .info-card-details .info-card-header h3 {
     color: rgb(62, 62, 62);
-    font-size: 22px;
+    font-size: 2rem;
     font-weight: 900;
     text-transform: uppercase;
     margin: 0 !important;
     padding: 0 !important;
 }
 
-.info-card .info-card-details .info-card-header h3 {
+.info-card .info-card-details .info-card-header h3,
+.info-card .info-card-details .info-card-detail h3{
     color: rgb(142, 182, 52);
-    font-size: 15px;
+    font-size: 1.7rem;
     font-weight: 400;
     margin-top: 5px;
+}
+
+.info-card .info-card-details .info-card-detail p {
+    font-size: 1.3rem;
 }
 
 .info-card .info-card-details .info-card-detail .social {
