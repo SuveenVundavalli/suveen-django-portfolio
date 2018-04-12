@@ -15,7 +15,8 @@ function main() {
     });
 
     $("#nav").wrap("<div class='nav-placeholder'></div>");
-    $(".nav-placeholder").height($("#nav").outerHeight(true));
+    $(".nav-placeholder").height(52);
+    // $(".nav-placeholder").height($("#nav").innerHeight());
 
     // var shiftWindow = function () {
     //     scrollBy(0, -52)

@@ -60,7 +60,7 @@ body {
     padding-bottom: 2rem;
 }
 
-/*@media (max-width: 960px) {
+/*@media (max-width: 991px) {
     .container {
         padding-right: 3rem;
         padding-left: 3rem;
@@ -141,10 +141,15 @@ section {
 
 #contact-form {
     padding-bottom: 40px;
+    font-size: 1.5rem;
 }
 
 .contact-submit {
     margin-right: 18px;
+}
+
+#contact-help-text {
+    font-size: 1.5rem;
 }
 
 /*
@@ -153,7 +158,7 @@ section {
 ======================================================================================================================================================
  */
 
-@media (max-width: 960px) {
+@media (max-width: 991px) {
 
     .bg-transparent {
         background: rgba(0, 0, 0, 0.3);
@@ -224,7 +229,7 @@ section {
     }
 }
 
-@media (min-width: 961px) {
+@media (min-width: 992px) {
     .bg-transparent {
         background: rgba(0, 0, 0, 0.3);
         margin-right: 30px;
