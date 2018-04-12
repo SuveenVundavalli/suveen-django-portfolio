@@ -60,7 +60,7 @@ body {
     padding-bottom: 2rem;
 }
 
-/*@media (max-width: 960px) {
+/*@media (max-width: 991px) {
     .container {
         padding-right: 3rem;
         padding-left: 3rem;
@@ -109,9 +109,6 @@ section {
 ======================================================================================================================================================
  */
 
-
-
-
 .progress {
     height: 35px;
 
@@ -132,8 +129,27 @@ section {
 }
 
 .progress-bar {
-  text-align: left;
-  transition-duration: 3s;
+    text-align: left;
+    transition-duration: 3s;
+}
+
+/*
+======================================================================================================================================================
+                                                                           Contact Me
+======================================================================================================================================================
+ */
+
+#contact-form {
+    padding-bottom: 40px;
+    font-size: 1.5rem;
+}
+
+.contact-submit {
+    margin-right: 18px;
+}
+
+#contact-help-text {
+    font-size: 1.5rem;
 }
 
 /*
@@ -188,6 +204,16 @@ section {
     /*background-color: #d64161;*/
 }
 
+#contact {
+    background: #0000ff url('/static/images/background/blur/bg4.jpg') no-repeat;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-color: #d64161;*/
+}
+
 /*
 ======================================================================================================================================================
                                                                            Footer
@@ -200,12 +226,12 @@ html {
 }
 
 footer.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  min-height: 100px;
-  background-color: #f5f5f5;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    min-height: 100px;
+    background-color: #f5f5f5;
 }
 
 /* Social */
@@ -286,4 +312,5 @@ footer.footer {
 
 .footer-copyright {
     text-decoration: none;
+    margin-top: 10px;
 }

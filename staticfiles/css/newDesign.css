@@ -60,7 +60,7 @@ body {
     padding-bottom: 2rem;
 }
 
-/*@media (max-width: 960px) {
+/*@media (max-width: 991px) {
     .container {
         padding-right: 3rem;
         padding-left: 3rem;
@@ -79,8 +79,6 @@ body {
 
 #nav {
     font-size: 1.5rem;
-    z-index: 1001;
-
 }
 
 #nav.affix {
@@ -133,6 +131,25 @@ section {
 .progress-bar {
     text-align: left;
     transition-duration: 3s;
+}
+
+/*
+======================================================================================================================================================
+                                                                           Contact Me
+======================================================================================================================================================
+ */
+
+#contact-form {
+    padding-bottom: 40px;
+    font-size: 1.5rem;
+}
+
+.contact-submit {
+    margin-right: 18px;
+}
+
+#contact-help-text {
+    font-size: 1.5rem;
 }
 
 /*
@@ -233,4 +250,5 @@ footer.footer {
 
 .footer-copyright {
     text-decoration: none;
+    margin-top: 10px;
 }
