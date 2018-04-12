@@ -109,9 +109,6 @@ section {
 ======================================================================================================================================================
  */
 
-
-
-
 .progress {
     height: 35px;
 
@@ -132,8 +129,22 @@ section {
 }
 
 .progress-bar {
-  text-align: left;
-  transition-duration: 3s;
+    text-align: left;
+    transition-duration: 3s;
+}
+
+/*
+======================================================================================================================================================
+                                                                           Contact Me
+======================================================================================================================================================
+ */
+
+#contact-form {
+    padding-bottom: 40px;
+}
+
+.contact-submit {
+    margin-right: 18px;
 }
 
 /*
@@ -142,50 +153,149 @@ section {
 ======================================================================================================================================================
  */
 
-#skills h2 {
-    color: white;
+@media (max-width: 960px) {
+
+    .bg-transparent {
+        background: rgba(0, 0, 0, 0.3);
+        margin-bottom: 30px;
+        padding-top: 15px;
+    }
+
+    #skills h2 {
+        color: white;
+    }
+
+    #experience h2 {
+        color: white;
+    }
+
+    #education h2 {
+        color: white;
+    }
+
+    #contact h2,
+    #contact-help-text,
+    .form-group label {
+        color: white;
+    }
+
+    .scale {
+        color: white;
+    }
+
+    #skills {
+        background: #6b5b95 url('/static/images/background/blur/bg1.jpg') no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*background-color: #6b5b95;*/
+    }
+
+    #experience {
+        background: #feb236 url('/static/images/background/blur/bg2.jpg') no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*background-color: #feb236;*/
+    }
+
+    #education {
+        background: #d64161 url('/static/images/background/blur/bg3.jpg') no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*background-color: #d64161;*/
+    }
+
+    #contact {
+        background: #0000ff url('/static/images/background/blur/bg4.jpg') no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*background-color: #d64161;*/
+    }
 }
 
-#experience h2 {
-    color: white;
-}
+@media (min-width: 961px) {
+    .bg-transparent {
+        background: rgba(0, 0, 0, 0.3);
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        padding-top: 15px;
+    }
 
-#education h2 {
-    color: white;
-}
+    #skills h2 {
+        color: white;
+    }
 
-.scale {
-    color: white;
-}
+    #experience h2 {
+        color: white;
+    }
 
-#skills {
-    /*background: #6b5b95 url('/static/images/background/bg1.jpg') no-repeat;*/
-    /*width: 100%;*/
-    /*background-attachment: fixed;*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
-    background-color: #6b5b95;
-}
+    #education h2 {
+        color: white;
+    }
 
-#experience {
-    /*background: #feb236 url('/static/images/background/bg2.jpg') no-repeat;*/
-    /*width: 100%;*/
-    /*background-attachment: fixed;*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
-    background-color: #feb236;
-}
+    #contact h2,
+    #contact-help-text,
+    .form-group label {
+        color: white;
+    }
 
-#education {
-    /*background: #d64161 url('/static/images/background/bg3.jpg') no-repeat;*/
-    /*width: 100%;*/
-    /*background-attachment: fixed;*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
-    background-color: #d64161;
+    .scale {
+        color: white;
+    }
+
+    #skills {
+        background: #6b5b95 url('/static/images/background/pics/img_amsterdam.jpg') no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*background-color: #6b5b95;*/
+    }
+
+    #experience {
+        background: #feb236 url('/static/images/background/pics/img_suite_tophalf.jpg') no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*background-color: #feb236;*/
+    }
+
+    #education {
+        background: #d64161 url('/static/images/background/pics/img_group.jpg') no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*background-color: #d64161;*/
+    }
+
+    #contact {
+        background: #d64161 url('/static/images/background/pics/img_bw_standing.jpg') no-repeat;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*background-color: #d64161;*/
+    }
+
+
 }
 
 /*
@@ -200,12 +310,12 @@ html {
 }
 
 footer.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  min-height: 100px;
-  background-color: #f5f5f5;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    min-height: 100px;
+    background-color: #f5f5f5;
 }
 
 /* Social */
@@ -286,4 +396,5 @@ footer.footer {
 
 .footer-copyright {
     text-decoration: none;
+    margin-top: 10px;
 }

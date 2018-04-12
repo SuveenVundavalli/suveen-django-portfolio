@@ -1,8 +1,9 @@
+import json
 from .models import Contact
 
 from django.conf import settings
 from django.core.mail import EmailMultiAlternatives
-from django.shortcuts import redirect, render
+from django.shortcuts import redirect, render, render_to_response, HttpResponse
 from django.template.loader import get_template
 
 
@@ -10,13 +11,13 @@ from django.template.loader import get_template
 def index(request):
     return render(request, "newDesign.html", {})
 
+
 # def index(request):
 #     context = {"navbar": "profile"}
 #     return render(request, "suveen/index.html", context)
 
 
 def contact(request):
-    context = {"navbar": "contact"}
     if request.method == "POST":
         contact_me = Contact()
         contact_me.name = request.POST.get("name")
@@ -25,6 +26,7 @@ def contact(request):
         contact_me.subject = request.POST.get("subject")
         contact_me.message = request.POST.get("message")
         contact_me.save()
+        context = {}
         context['messageHeader'] = "Thank you!"
         context['message'] = "Thank you %s for reaching me. Your response is noted! I will get back to you ASAP!" % (
             contact_me.name)
@@ -36,7 +38,35 @@ def contact(request):
         mail_html = get_template("mail/contact.html")
         send_email(mail_context, mail_html, mail_text, subject)
 
-    return render(request, "suveen/contact.html", context)
+    return render(request, "newDesign.html", {})
+
+
+def contact_ajax(request):
+    bg_style = 'pics'
+    context = {'bg_style': bg_style}
+    if request.method == "POST":
+        contact_me = Contact()
+        contact_me.name = request.POST.get("name")
+        contact_me.email = request.POST.get("email")
+        contact_me.mobile = request.POST.get("mobile")
+        contact_me.subject = request.POST.get("subject")
+        contact_me.message = request.POST.get("message")
+        if contact_me.name and contact_me.email and contact_me.subject and contact_me.message:
+            contact_me.save()
+            context['messageHeader'] = "Thank you!"
+            context['message'] = "Thank you %s for reaching me. Your response is noted! I will get back to you ASAP!" % (
+                contact_me.name)
+            mail_context = {'name': contact_me.name, 'email': contact_me.email, 'mobile': contact_me.mobile,
+                            'subject': contact_me.subject, 'message': contact_me.message, 'site_url': settings.SITE_URL,
+                            'contact_id': contact_me.pk}
+            subject = "New entry in Contact me from @ suveen.me"
+            mail_text = get_template("mail/contact.txt")
+            mail_html = get_template("mail/contact.html")
+            send_email(mail_context, mail_html, mail_text, subject)
+
+        return HttpResponse(json.dumps(context))
+
+    return render_to_response(request, 'newDesign.html',context)
 
 
 def send_email(mail_context, mail_html, mail_text, subject):

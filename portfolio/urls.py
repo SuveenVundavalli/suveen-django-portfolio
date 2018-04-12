@@ -21,6 +21,8 @@ from suveen import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^contact/$', views.contact, name="contact"),
+    url(r'^api/contact/$', views.contact_ajax, name="contact_api"),
+    url(r'^contact/$', views.contact, name="contact"),
     url(r'^experience/$', views.experience, name="experience"),
     url(r'^education/$', views.education, name="experience"),
     url(r'^skills/$', views.skills, name="experience"),

@@ -159,33 +159,33 @@ section {
 }
 
 #skills {
-    /*background: #6b5b95 url('/static/images/background/bg1.jpg') no-repeat;*/
-    /*width: 100%;*/
-    /*background-attachment: fixed;*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
-    background-color: #6b5b95;
+    background: #6b5b95 url('/static/images/background/blur/bg1.jpg') no-repeat;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-color: #6b5b95;*/
 }
 
 #experience {
-    /*background: #feb236 url('/static/images/background/bg2.jpg') no-repeat;*/
-    /*width: 100%;*/
-    /*background-attachment: fixed;*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
-    background-color: #feb236;
+    background: #feb236 url('/static/images/background/blur/bg2.jpg') no-repeat;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-color: #feb236;*/
 }
 
 #education {
-    /*background: #d64161 url('/static/images/background/bg3.jpg') no-repeat;*/
-    /*width: 100%;*/
-    /*background-attachment: fixed;*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
-    background-color: #d64161;
+    background: #d64161 url('/static/images/background/blur/bg3.jpg') no-repeat;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-color: #d64161;*/
 }
 
 /*

@@ -71,6 +71,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'suveen.context_processors.add_variable_to_context',
             ],
         },
     },
@@ -135,3 +136,9 @@ EMAIL_HOST_USER = settings_secret.EMAIL_HOST_USER
 EMAIL_HOST_PASSWORD = settings_secret.EMAIL_HOST_PASSWORD
 EMAIL_PORT = settings_secret.EMAIL_PORT
 EMAIL_USE_TLS = settings_secret.EMAIL_USE_TLS
+
+
+# BG_STYLE = None
+# BG_STYLE = 'plain'
+# BG_STYLE = 'blur'
+BG_STYLE = 'pics'
