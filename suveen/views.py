@@ -58,7 +58,7 @@ def mark_contact_read(request, pk):
     contact.save()
     context['messageHeader'] = "Message marked read!"
     context['message'] = "You marked %s as read" % contact
-    return render(request, "suveen/index.html", context)
+    return render(request, "base.html", context)
 
 
 def github(request):
