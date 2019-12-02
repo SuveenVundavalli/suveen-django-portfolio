@@ -62,8 +62,8 @@ def mark_contact_read(request, pk):
 
 
 def github(request):
-    return redirect("https://github.com/suveenkumarchowdary")
+    return redirect("https://github.com/suveenvundavalli")
 
 
 def linkedin(request):
-    return redirect("https://www.linkedin.com/in/svundavalli/")
+    return redirect("https://www.linkedin.com/in/SuveenVundavalli/")
