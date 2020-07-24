@@ -82,16 +82,24 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': settings_secret.ENGINE,
-        'NAME': settings_secret.NAME,
-        'USER': settings_secret.USER,
-        'PASSWORD': settings_secret.PASSWORD,
-        'HOST': settings_secret.HOST,
-        'PORT': settings_secret.PORT,  # Set to empty string for default.
+if PRODUCTION:
+    DATABASES = {
+        'default': {
+            'ENGINE': settings_secret.ENGINE,
+            'NAME': settings_secret.NAME,
+            'USER': settings_secret.USER,
+            'PASSWORD': settings_secret.PASSWORD,
+            'HOST': settings_secret.HOST,
+            'PORT': settings_secret.PORT,  # Set to empty string for default.
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': 'mydatabase',
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
