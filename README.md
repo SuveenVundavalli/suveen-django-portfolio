@@ -7,8 +7,8 @@ This repo is a personal portfolio website using dynamic routing and responsive d
 | Frontend | HTML, CSS, JavaScript, jQuery, BootStrap |
 | Backend | Django (Python Framework) |
 | Database | Postgres SQL |
-| Domain |  GoDaddy |
-| Hosting | AWS Elastic Cloud Compute (EC2) |
+| Domain |  Google Domains |
+| Hosting | Self host in private virtual server |
 | Load Balancing | AWS  Elastic Load Balancer |
-| Monitoring | AWS Cloud Watch |
+| Monitoring | Net Data |
 | Analytics | Google Analytics |
